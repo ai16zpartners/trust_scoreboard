@@ -1,0 +1,104 @@
+.number {
+    position: relative;
+    line-height: 24px;
+    font-weight: 600;
+}
+.text {
+    position: relative;
+    line-height: 22px;
+    font-weight: 600;
+    margin: 0 14px;
+    
+}
+.button {
+    border-radius: 14px;
+    background-color: #9B8D7D; /* Default gray state */
+    height: 38px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0px;
+    box-sizing: border-box;
+    max-width: 300px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.button.active {
+    background-color: #f98c13; /* Orange when signed in */
+}
+
+.button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.button1 {
+    border-radius: 14px;
+    background-color: #9b8d7d;
+    height: 38px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0px;
+    box-sizing: border-box;
+    max-width: 600px;
+}
+.button1:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+.buttonParent {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 12px;
+    width: 100%;
+}
+.numberParent {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    box-sizing: border-box;
+    gap: 10px;
+    text-align: left;
+    font-size: 18px;
+    color: #242424;
+}
+.userName {
+    margin: 0 8px;
+    font-size: 14px;
+    opacity: 0.9;
+    color: #fff;
+}
+.providerIcon {
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+}
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    padding: 24px 0px 10px;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .numberParent,
+    .buttonParent {
+        width: 100%;
+    }
+    
+    .title {
+        padding: 24px 0px 10px;
+    }
+}

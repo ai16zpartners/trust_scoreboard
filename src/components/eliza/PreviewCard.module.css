@@ -1,0 +1,71 @@
+.previewSection {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px;
+}
+
+.previewCard {
+  background: #fff;
+  border-radius: 24px;
+  padding: 32px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+}
+
+.previewAvatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  overflow: hidden;
+  background: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.previewAvatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.previewTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+  text-align: center;
+}
+
+.previewDescription {
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin: 0;
+  max-width: 280px;
+}
+
+@media (max-width: 768px) {
+  .previewSection {
+    padding: 16px;
+  }
+
+  .previewCard {
+    padding: 24px;
+  }
+
+  .previewTitle {
+    font-size: 20px;
+  }
+
+  .previewDescription {
+    font-size: 14px;
+  }
+} 

@@ -1,38 +1,79 @@
 .container {
-    width: 100%;
-    min-height: 87dvh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-    margin: 0;
+  width: 100%;
+  min-height: 87dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  box-sizing: border-box;
 }
 
-.content {
-    width: 100%;
-    max-width: 600px;
-    box-sizing: border-box;
+.contentWrapper {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
 }
 
-.title {
-  font-size: 34px;
-  line-height: 42px;
-  font-weight: 600;
-  color: #242424;
-  font-weight: bold;
-  margin-bottom: 24px;
+.profileDataWrapper,
+.profileTotalsWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.contentArea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.profileContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rowContainer {
+  display: flex;
+  gap: 24px;
+}
+
+.column {
+  flex: 1;
+  min-width: 0;
+  /* Prevents flex items from overflowing */
+}
+
+.signOutButton {
+  display: flex;
+  height: 50px;
+  /* max-width: 600px; */
+  padding: 14px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  align-self: stretch;
+  border-radius: 14px;
+  background: #242424;
+  width: 100%;
+  color: #747474;
+  font-weight: bolder;
 }
 
 @media (max-width: 768px) {
-    .container {
-        width: 100vw;
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-    }
-    
-    .content {
-        width: 100%;
-        padding: 0;
-    }
+  .container {
+    padding: 16px;
+  }
+
+  .contentWrapper {
+    gap: 16px;
+  }
+
+  .rowContainer {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .column {
+    width: 100%;
+  }
 }

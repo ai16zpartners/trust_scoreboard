@@ -1,0 +1,66 @@
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #242424;
+    padding: 24px 0px 10px;
+    margin: 0 24px;
+}
+
+.buttonParent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    width: calc(100% - 48px);
+    margin: 0 24px;
+}
+
+.button {
+    border-radius: 14px;
+    background-color: #f98c13;
+    height: 38px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 0px;
+    box-sizing: border-box;
+    max-width: 300px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.checkoutButton {
+    background-color: #FF4463;
+    margin-left: auto;
+}
+
+.button.active {
+    background-color: #f98c13;
+}
+
+.button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+    position: relative;
+    line-height: 22px;
+    font-weight: 600;
+    margin: 0 14px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .buttonParent {
+        width: calc(100% - 48px);
+        margin: 0 24px;
+        flex-wrap: wrap;
+    }
+    
+    .checkoutButton {
+        margin-left: 0;
+    }
+}

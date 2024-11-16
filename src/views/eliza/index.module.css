@@ -1,0 +1,203 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  padding: 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.createSection {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.avatarUpload {
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.uploadButton {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: #fff;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 12px 16px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button.selected {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.helperText {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.disconnectButton {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.2);
+  color: #ff4444;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.connectButton {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  padding: 12px;
+  color: #fff;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.publishButton {
+  background: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.previewSection {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.previewCard {
+  background: #fff;
+  border-radius: 24px;
+  padding: 32px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.previewAvatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.previewTitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+  margin: 0;
+}
+
+.previewDescription {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+}
+
+.previewSocials,
+.previewSkills {
+  width: 100%;
+}
+
+.socialButtons,
+.skillButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.socialButton {
+  background: #000;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skillButton {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 8px 16px;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 24px;
+    gap: 24px;
+  }
+} 

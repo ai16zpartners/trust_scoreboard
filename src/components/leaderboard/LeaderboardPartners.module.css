@@ -1,0 +1,384 @@
+.frameParent {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 8px;
+    color: #9B8D7D;
+}
+
+.headingParent {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 16px;
+    border-radius: 14px;
+}
+
+.heading,
+.heading2,
+.heading3 {
+    font-size: 12px;
+    line-height: 140%;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #9B8D7D;
+    text-align: left;
+}
+
+.heading:first-child {
+    text-align: right;
+}
+
+.heading3 {
+    text-align: right;
+}
+
+.row,
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    gap: 10px;
+    color: black;
+    border-radius: 25px;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.row {
+    height: 62px;
+}
+
+.row1 {
+    background: #2d2d2d;
+    height: 62px;
+    transition: all 0.3s ease;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.rowChild {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+.avatarImage {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 14px;
+}
+
+.textParent {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.text1 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+.text2 {
+    color: #ffff;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.textWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 16px;
+}
+
+.text3,
+.trustScoreGold,
+.trustScoreSilver,
+.trustScoreBronze {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: right;
+    margin-left: auto;
+}
+
+.text3 {
+    color: #fff;
+}
+
+.trustScoreGold {
+    color: #FFA600;
+}
+
+.trustScoreSilver {
+    color: #858585;
+}
+
+.trustScoreBronze {
+    color: #D56B00;
+}
+
+.imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+}
+
+.trustScoreImage {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.tooltipContainer {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
+.tooltip {
+    visibility: hidden;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 100;
+    margin-bottom: 8px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.tooltipContainer:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+}
+
+@media (max-width: 768px) {
+
+    .headingParent,
+    .row,
+    .row1 {
+
+        padding: 8px 16px;
+        gap: 12px;
+    }
+
+    .text {
+        font-size: 16px;
+        padding-left: 4px;
+    }
+
+    .text1 {
+        font-size: 14px;
+    }
+
+    .text2 {
+        font-size: 12px;
+    }
+
+    .text3,
+    .trustScoreGold,
+    .trustScoreSilver,
+    .trustScoreBronze {
+        font-size: 14px;
+    }
+
+    .rowChild {
+        gap: 6px;
+        margin-left: -4px;
+    }
+
+    .avatarImage {
+        width: 28px;
+        height: 28px;
+        margin-right: 6px;
+    }
+
+    .textParent {
+        gap: 0px;
+    }
+
+    .rankWrapper img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .textWrapper,
+    .tooltipContainer {
+        padding-right: 12px;
+    }
+}
+
+@keyframes gradientBorder {
+    0% {
+        border-color: #FF0000;
+    }
+
+    25% {
+        border-color: #FFB700;
+    }
+
+    50% {
+        border-color: #0073FF;
+    }
+
+    75% {
+        border-color: #FF00B7;
+    }
+
+    100% {
+        border-color: #FF0000;
+    }
+}
+
+.currentUserRow {
+    background: #2d2d2d !important;
+    border: 1px solid;
+    border-color: #FF0000;
+    position: relative;
+    overflow: hidden;
+    animation: gradientBorder 4s linear infinite;
+}
+
+/* Remove the orange bar since we have the animated border */
+.currentUserRow::after {
+    display: none;
+}
+
+.currentUserRow .text1 {
+    background: linear-gradient(90deg, #FF0000, #FFB700, #0073FF, #FF00B7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 300% 100%;
+    animation: gradientText 4s linear infinite;
+}
+
+@keyframes gradientText {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 300% 50%;
+    }
+}
+
+.currentUserRow .text2 {
+    color: #9B8D7D;
+    /* Reset to normal color */
+}
+
+.row:hover,
+.row1:hover {
+    cursor: pointer;
+    /* background: #F1EDE3;
+
+    .text1 {
+        color: #2d2d2d;
+    }
+
+    .trustScoreImage {
+        filter: invert(0);
+    } */
+}
+
+
+
+
+/* .currentUserRow:hover {
+    background: #FFF5EC !important;
+} */
+
+.rankWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 14px;
+}
+
+.rankWrapper img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.medalEmoji {
+    font-size: 24px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #7E7E7E;
+    margin: 0;
+    text-align: right;
+}
+
+@media (max-width: 768px) {
+    .medalEmoji {
+        font-size: 20px;
+    }
+
+    .rankWrapper {
+        padding-right: 12px;
+    }
+}
+
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .5;
+    }
+}
+
+.animate-pulse {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}

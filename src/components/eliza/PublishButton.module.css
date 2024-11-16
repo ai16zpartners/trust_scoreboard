@@ -1,0 +1,29 @@
+.publishButton {
+  background: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 16px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s ease;
+  margin-top: 16px;
+}
+
+.publishButton:hover {
+  background: #111;
+  transform: translateY(-1px);
+}
+
+.publishButton:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .publishButton {
+    padding: 14px;
+    font-size: 14px;
+  }
+} 

@@ -11,17 +11,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@babel/runtime": "^7.x",
     "@heroicons/react": "^1.0.5",
     "@noble/ed25519": "^1.7.1",
     "@solana/spl-token": "^0.4.9",
     "@solana/wallet-adapter-base": "^0.9.22",
     "@solana/wallet-adapter-react": "^0.15.35",
-    "@solana/wallet-adapter-react-ui": "^0.9.31",
+    "@solana/wallet-adapter-react-ui": "^0.9.35",
     "@solana/wallet-adapter-wallets": "^0.19.16",
     "@solana/web3.js": "^1.95.4",
     "@tailwindcss/typography": "^0.5.9",
+    "axios": "^1.7.7",
+    "bs58": "^4.0.1",
+    "chart.js": "^4.4.6",
     "daisyui": "^1.24.3",
     "date-fns": "^2.29.3",
+    "fastestsmallesttextencoderdecoder": "^1.0.22",
     "immer": "^9.0.12",
     "next": "^13.1.5",
     "next-auth": "^4.24.10",
@@ -29,9 +34,11 @@
     "next-transpile-modules": "^10.0.0",
     "node-cache": "^5.1.2",
     "react": "^18.2.0",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.3.0",
     "react-responsive": "^10.0.0",
+    "tslib": "^2.6.2",
     "zustand": "^3.6.9"
   },
   "devDependencies": {
@@ -42,9 +49,9 @@
     "eslint-config-next": "^13.1.5",
     "postcss": "^8.4.5",
     "tailwindcss": "^3.4.14",
-    "typescript": "^4.9.4"
+    "typescript": "^5.0.0"
   },
   "engines": {
-    "node": ">=16"
+    "node": "20.x"
   }
 }

@@ -130,6 +130,18 @@ The responsive version for wallets and wallet adapter may not function or work a
 ## Installation
 
 ```bash
+git clone https://github.com/AI16Z/ai16z-partners-lounge.git
+```
+
+```bash	
+cd ai16z-partners-lounge
+```
+
+```bash		
+nvm use 21.11
+```
+
+```bash
 npm install
 # or
 yarn install

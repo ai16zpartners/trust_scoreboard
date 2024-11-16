@@ -16,8 +16,8 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-color: #202120;
   font-family: var(--font-family-base);
-  background-color: #F1EDE3;
   min-height: 100vh;
   line-height: normal;
 }
@@ -36,3 +36,21 @@ a {
 .wallet-adapter-button:not([disabled]):hover {
   background-color: #707070;
 }
+
+/* #telegram-login-AI16ZBOT{
+ width: 100% !important;
+}
+
+#telegram-login-AI16ZBOT body {
+  width: 100% !important;
+  background-color: #202120;
+}
+
+#telegram-login-AI16ZBOT body .body_widget_login,
+#telegram-login-AI16ZBOT body .tgme_widget_login_button {
+  width: 100% !important;
+  
+} */
+
+
+

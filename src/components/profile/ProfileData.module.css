@@ -1,0 +1,92 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 14px 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+}
+
+.userName {
+  font-family: 'SF Compact Round', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+.userRole {
+  font-family: 'SF Compact Round', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #7E7E7E;
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+}
+
+.profileImage {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.signOutButton {
+  background-color: #9B8D7D;
+  color: white;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-left: auto;
+  height: 38px;
+  white-space: nowrap;
+}
+
+.signOutButton:hover {
+  background-color: #8a7f71;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signOutButton:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 14px 16px 24px;
+  }
+
+  .userName {
+    font-size: 24px;
+  }
+
+  .userRole {
+    font-size: 16px;
+  }
+}

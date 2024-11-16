@@ -1,0 +1,108 @@
+.container {
+  width: 100%;
+  /* max-width: 800px; */
+  /* margin: 0 auto; */
+  padding: 24px;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.metricCard {
+  background: #2D2D2D;;
+  backdrop-filter: blur(4px);
+  border-radius: 24px;
+  padding: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.metricCard:first-child {
+  grid-column: 1 / -1;
+  background: #2D2D2D;;
+}
+
+.metricContent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.metricsAi {
+  color: #7E7E7E;
+  font-size: 14px;
+  font-family: 'SF Compact Round', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.metricInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.value {
+  font-family: 'SF Compact Round', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.trustScorevalue {
+  font-family: 'SF Compact Round', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+.label {
+  font-family: 'SF Compact Round', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #FFFFFF
+}
+
+.progressBar {
+  position: relative;
+  margin-top: 8px;
+  /* Adds some space between the progress bar and the bottom of the card */
+  height: 12px;
+  /* Slightly thicker to make it stand out */
+  background: #FF4463;
+  /* Set to the specified color */
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+
+.progressContainer {
+  position: relative;
+  margin-top: 8px;
+  /* Space between the progress bar and bottom */
+  height: 12px;
+  background: #8B2C45;
+  /* Darker version of #FF4463 */
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
+
+  .metricsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .value {
+    font-size: 20px;
+  }
+
+   .metricsAi {
+    font-size: 13px;
+  }
+}
+

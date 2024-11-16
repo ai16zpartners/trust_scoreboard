@@ -1,28 +1,138 @@
-.nav {
-    width: 100%;
-    background: transparent;
-    padding: 16px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+  width: 100%;
+  height: auto;
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #202120;
+  padding: 8px 16px;
+  gap: 16px;
+}
+
+.logoContainer {
+  flex-shrink: 0;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.searchContainer {
+  flex: 1;
+  max-width: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  width: 100%;
+  height: 40px;
+  padding: 8px 40px 8px 16px;
+  border-radius: 20px;
+  border: 1px solid #9B8D7D;
+  background-color: white;
+  font-size: 14px;
+  color: #242424;
+  transition: all 0.2s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: #F98C13;
+  box-shadow: 0 0 0 2px rgba(249, 140, 19, 0.1);
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.actionButton {
+  background-color: #F98C13;
+  color: white;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 14px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.actionButton:hover {
+  background-color: #e07a0f;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+}
+
+.profileContainer:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.profileImage {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profileText {
+  color: #9a8c7c;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease;
+  margin-right: 8px;
+}
+
+.iconButton:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 8px;
+    gap: 8px;
   }
-  
-  .profileLink {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #242424;
-    font-family: var(--font-family-base);
-    font-weight: 500;
+
+  .searchContainer {
+    order: 3;
+    min-width: 100%;
+    margin-top: 8px;
   }
-  
-  .profileImage {
-    border-radius: 50%;
-    object-fit: cover;
+
+  .actionsContainer {
+    gap: 8px;
   }
-  
-  @media (max-width: 768px) {
-    .nav {
-      padding: 12px;
-    }
+
+  .actionButton {
+    padding: 6px 10px;
+    font-size: 12px;
   }
+
+  .profileContainer {
+    padding: 6px 12px;
+  }
+
+  .profileText {
+    font-size: 12px;
+  }
+}

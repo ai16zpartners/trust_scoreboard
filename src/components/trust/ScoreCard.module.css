@@ -1,0 +1,31 @@
+.card {
+    background-color: #FA9737;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: #242424;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+
+.value {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.description {
+    color: #242424;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
